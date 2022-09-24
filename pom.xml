@@ -18,7 +18,14 @@
         <dependency>
             <groupId>com.github.ozlerhakan</groupId>
             <artifactId>poiji</artifactId>
-            <version>3.1.8</version>
+            <version>3.1.7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.36</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
