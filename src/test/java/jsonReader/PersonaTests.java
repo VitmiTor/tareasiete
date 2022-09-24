@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 public class PersonaTests extends BaseTest {
 
-
     @Test(groups = {smoke})
     @Description("Verificando Json Persona")
     public void edadTest() {
@@ -43,6 +42,4 @@ public class PersonaTests extends BaseTest {
         softAssert.assertEquals(singletrabajo.isActive(), false);
         softAssert.assertAll();
     }
-
-
 }

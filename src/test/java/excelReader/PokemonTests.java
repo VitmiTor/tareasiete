@@ -11,8 +11,8 @@ import utilities.DataProviders;
 
 import java.util.List;
 
-import static utilities.DataProviders.pokemonDataProvider1;
-import static utilities.DataProviders.pokemonDataProvider2;
+import static utilities.DataProviders.pokemon1DataProvider;
+import static utilities.DataProviders.pokemon2DataProvider;
 
 
 public class PokemonTests extends BaseTest {
@@ -32,7 +32,7 @@ public class PokemonTests extends BaseTest {
     }
 
 
-    @Test(groups = {smoke}, dataProvider = pokemonDataProvider1, dataProviderClass = DataProviders.class)
+    @Test(groups = {smoke}, dataProvider = pokemon1DataProvider, dataProviderClass = DataProviders.class)
     @Description("Comparando todo los atributos pokemons")
     public void pokemonProviderTest(Pokemon pokemon) {
         logs.info("Comparando estadisticas pokemon");
@@ -45,7 +45,7 @@ public class PokemonTests extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test(groups = {regression}, dataProvider = pokemonDataProvider2, dataProviderClass = DataProviders.class)
+    @Test(groups = {regression}, dataProvider = pokemon2DataProvider, dataProviderClass = DataProviders.class)
     public void pokemonTotalProviderTest(Pokemon pokemon) {
         logs.info("Test de comparancion diferente");
         Assert.assertNotEquals(pokemon.getNombre(), pokemon.getNombreJapones());

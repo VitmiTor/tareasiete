@@ -8,8 +8,8 @@ public class DataProviders {
     private final ExcelReader excelReader = new ExcelReader();
     private final MapParser mapParser = new MapParser();
     private final JsonReader jsonReader = new JsonReader();
-    public static final String pokemonDataProvider1 = "pokemon data provider";
-    public static final String pokemonDataProvider2 = "pokemon data provider 2";
+    public static final String pokemon1DataProvider = "pokemon data provider";
+    public static final String pokemon2DataProvider = "pokemon data provider 2";
 
     private Logs log = new Logs();
 
@@ -22,7 +22,7 @@ public class DataProviders {
         return jsonReader.getPersona();
     }
 
-    @DataProvider(name = pokemonDataProvider1)
+    @DataProvider(name = pokemon1DataProvider)
     public Object[][] pokemonProvider() {
         log.debug("Creando la lista pokemon");
         var pokemonList = excelReader.getPokemonList();
@@ -37,7 +37,7 @@ public class DataProviders {
         return object;
     }
 
-    @DataProvider(name = pokemonDataProvider2)
+    @DataProvider(name = pokemon2DataProvider)
     public Object[][] pokemonProvider2() {
         log.debug("Verificando que el nombre en Japones sea dif del nombre americano");
         var pokemonList = excelReader.getPokemonList();

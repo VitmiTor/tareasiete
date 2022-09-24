@@ -18,6 +18,4 @@ public class MapParser {
         }
         return map;
     }
-
-  
 }
