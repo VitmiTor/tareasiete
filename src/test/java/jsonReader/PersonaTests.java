@@ -1,7 +1,7 @@
 package jsonReader;
 
 import base.BaseTest;
-import jdk.jfr.Description;
+import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
 public class PersonaTests extends BaseTest {

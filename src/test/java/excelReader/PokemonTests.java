@@ -1,7 +1,7 @@
 package excelReader;
 
 import base.BaseTest;
-import jdk.jfr.Description;
+import io.qameta.allure.Description;
 import models.Pokedex;
 import models.Pokemon;
 import org.testng.Assert;
@@ -14,7 +14,7 @@ import static utilities.DataProviders.pokemon2DataProvider;
 public class PokemonTests extends BaseTest {
 
     private Pokedex pokedex = new Pokedex();
-    
+
     @Test(groups = {smoke})
     public void leerPokemonTest() {
         var pokemon = dataProviders.quienEsEsePokemon("51");
