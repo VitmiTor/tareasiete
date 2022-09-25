@@ -11,8 +11,7 @@ public class DataProviders {
     public static final String pokemon1DataProvider = "pokemon data provider";
     public static final String pokemon2DataProvider = "pokemon data provider 2";
 
-    private Logs log = new Logs();
-
+    private final Logs log = new Logs();
 
     public Pokemon quienEsEsePokemon(String id) {
         return mapParser.getPokemonMap().get(id);

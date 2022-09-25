@@ -23,8 +23,7 @@ public class Pokemon {
     private double peso;
     @ExcelCellName("ATRAPADO")
     private boolean atrapado;
-
-
+    
     public String getId() {
         return id;
     }

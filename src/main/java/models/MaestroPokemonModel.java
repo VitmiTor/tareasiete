@@ -12,9 +12,9 @@ public class MaestroPokemonModel {
     private boolean esHombre;
     private String especialidad = "Maestro Pokemon";
     private String codigoEspecialidad = "PO-01";
-    private int numMax = 20;
-    private int numMin = 10;
-    private int maxDecimals = 2;
+    private final int numMax = 20;
+    private final int numMin = 10;
+    private final int maxDecimals = 2;
 
     public MaestroPokemonModel() {
         var faker = new Faker();

@@ -12,7 +12,7 @@ public class BaseTest {
     protected final Logs logs = new Logs();
     protected final Faker faker = new Faker();
     protected final DataProviders dataProviders = new DataProviders();
-    protected ExcelReader excelReader;
+    protected ExcelReader excelReader = new ExcelReader();
     protected SoftAssert softAssert;
     protected final String smoke = "Smoke";
     protected final String regression = "Regression";
@@ -21,7 +21,6 @@ public class BaseTest {
     public void setupBase() {
         logs.info("Iniciando Base Test");
         softAssert = new SoftAssert();
-        excelReader = new ExcelReader();
     }
 
     @AfterMethod
