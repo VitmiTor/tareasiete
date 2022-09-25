@@ -5,24 +5,16 @@ import jdk.jfr.Description;
 import models.Pokedex;
 import models.Pokemon;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utilities.DataProviders;
-
-import java.util.List;
 
 import static utilities.DataProviders.pokemon1DataProvider;
 import static utilities.DataProviders.pokemon2DataProvider;
 
 public class PokemonTests extends BaseTest {
-    private List<Pokemon> pokemonList;
+
     private Pokedex pokedex = new Pokedex();
-
-    @BeforeMethod
-    public void setup() {
-        pokemonList = excelReader.getPokemonList();
-    }
-
+    
     @Test(groups = {smoke})
     public void leerPokemonTest() {
         var pokemon = dataProviders.quienEsEsePokemon("51");

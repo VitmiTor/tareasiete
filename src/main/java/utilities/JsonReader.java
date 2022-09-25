@@ -18,8 +18,7 @@ public class JsonReader {
         mapper.enable(DeserializationFeature.UNWRAP_ROOT_VALUE);
         return mapper;
     }
-
-
+    
     public Persona getPersona() {
         logs.debug("Leyendo Persona Json");
         jsonFile = "persona.json";

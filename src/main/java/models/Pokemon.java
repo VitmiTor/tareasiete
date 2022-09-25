@@ -1,7 +1,9 @@
 package models;
 
 import com.poiji.annotation.ExcelCellName;
+import com.poiji.annotation.ExcelSheet;
 
+@ExcelSheet("pokemonList")
 public class Pokemon {
     @ExcelCellName("ID")
     private String id;
@@ -23,7 +25,7 @@ public class Pokemon {
     private double peso;
     @ExcelCellName("ATRAPADO")
     private boolean atrapado;
-    
+
     public String getId() {
         return id;
     }
