@@ -12,13 +12,16 @@ public class MaestroPokemonModel {
     private boolean esHombre;
     private String especialidad = "Maestro Pokemon";
     private String codigoEspecialidad = "PO-01";
+    private final int numMax = 20;
+    private final int numMin = 10;
+    private final int maxDecimals = 2;
 
     public MaestroPokemonModel() {
         var faker = new Faker();
         nombre = faker.name().firstName();
         apellido = faker.name().lastName();
-        edad = faker.number().numberBetween(10, 20);
-        peso = faker.number().randomDouble(2, 54, 60);
+        edad = faker.number().numberBetween(numMin, numMax);
+        peso = faker.number().randomDouble(maxDecimals, numMin, numMax);
         pais = faker.country().name();
         email = faker.internet().emailAddress();
         esHombre = faker.bool().bool();
